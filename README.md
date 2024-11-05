@@ -51,9 +51,11 @@ By default your website will be available at: [http://localhost:3000](http://loc
 
 ### Step 4: Add your website content
 
+1. Next you'll want to copy the code from your AI coding tool (e.g. v0.dev) to your Next.js app. For a single page website, you're specifically looking to replace the contents of the page.tsx file.
 
+2. Assuming you're running your web server, you'll probably get a bunch of errors due to missing ShadCN components or icons.
 
-3. Install ShadCN components:
+3. Install ShadCN components
 
 Initialize ShadCN in your project:
 ```
