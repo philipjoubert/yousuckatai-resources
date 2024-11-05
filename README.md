@@ -28,7 +28,31 @@ Exact instructions differ for **macOS** and **Windows**, so ask your favourite L
 npx create-next-app@14
 ```
 
+You'll be asked a few questions. I recommend answering them as follows:
+
+* *What is your project named?* the_name_of_your_app
+* *Would you like to use TypeScript?* Yes
+* *Would you like to use ESLint?* No
+* *Would you like to use Tailwind CSS?* Yes
+* *Would you like to use `src/` directory?* No
+* *Would you like to use App Router? (recommended)* Yes
+* *Would you like to customize the default import alias (@/*)?* No
+
 2. Open the project in any text editor or IDE. I recommend [Cursor](https://www.cursor.com/)
+
+3. Run the development server to ensure everything is working:
+
+```
+npm run dev
+```
+By default your website will be available at: [http://localhost:3000](http://localhost:3000)
+
+---
+
+### Step 4: Add your website content
+
+
+
 3. Install ShadCN components:
 
 Initialize ShadCN in your project:
@@ -36,25 +60,16 @@ Initialize ShadCN in your project:
 npx shadcn init
 ```
 
-Install individual components as needed. For example, to add a Button component:
+Install individual components as needed. For example:
 
 ```
-npx shadcn add button
+npx shadcn@latest add button
+npx shadcn@latest add input
+npx shadcn@latest add form
+npx shadcn@latest add card
 ```
 
-Run the development server to ensure everything is working:
-
-```
-npm run dev
-```
-
-Note: If any component installation issues arise with ShadCN, refer to the ShadCN documentation for specific setup instructions.
-
-Copy over your code from the exported .tsx file to integrate it into the project structure.
-
----
-
-### Step 4: Set Up GitHub for Version Control
+### Step 5: Set Up GitHub for Version Control
 
 1.	Create a new GitHub repository by navigating to GitHub and selecting New Repository.
 2.	Link your local Next.js project to the new GitHub repository. After creating the repository, GitHub will provide setup instructions. Use the following commands to set the remote origin and push your project:
@@ -71,7 +86,7 @@ Replace <YOUR_REPOSITORY_URL> with the URL from GitHub, which appears after crea
 
 ---
 
-### Step 5: Deploy to Vercel
+### Step 6: Deploy to Vercel
 
 1.	Create a new project on Vercel:
 	* Go to Vercel and select New Project.
